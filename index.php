@@ -26,10 +26,19 @@ if($password != ""){
     </h1>
 
     <form action="">
-        <input type="number" name="length" id="length" required min="5" max="20">
+        <input type="number" name="length" id="length" value="5" min="5" max="20">
         <label for="length">
             Lunghezza password
         </label>
+        <br>
+
+        <input type="checkbox" name="letters" type="letters" ><label for="letters">Lettere</label>
+        <input type="checkbox" name="numbers" type="numbers" ><label for="numbers">Numeri</label>
+        <input type="checkbox" name="specialChars" type="specialChars" ><label for="specialChars">Simboli</label>
+
+
+
+
         <button type="submit">genera</button>
     </form>
 
